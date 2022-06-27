@@ -1,5 +1,5 @@
 import { Box } from "@components/models/Box";
-import { VRCanvas as ARCanvas } from "@react-three/xr";
+import { ARCanvas } from "@react-three/xr";
 import { useState } from "react";
 
 function Home() {
