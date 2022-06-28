@@ -1,4 +1,4 @@
-import "@google/model-viewer";
+import "@google/model-viewer/dist/model-viewer-umd";
 import { useHelper } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { useRef } from "react";
@@ -15,7 +15,7 @@ export const ThreeKnight = () => {
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      "model-viewer": ModelViewer;
+      "model-viewer": any;
     }
     interface ModelViewer {
       src: string;
@@ -30,7 +30,7 @@ declare global {
   }
 }
 
-export const GoogleKnight = () => {
+const GoogleKnight: any = () => {
   return (
     <model-viewer
       style={{ height: "1000px", width: "1200px" }}
@@ -44,3 +44,5 @@ export const GoogleKnight = () => {
     ></model-viewer>
   );
 };
+
+export default GoogleKnight;
