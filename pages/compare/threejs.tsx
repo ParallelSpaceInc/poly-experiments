@@ -1,4 +1,4 @@
-import ModelComponent from "@components/models/knight";
+import { ThreeKnight } from "@components/models/knight";
 import { OrbitControls } from "@react-three/drei";
 import { ARCanvas } from "@react-three/xr";
 import type { NextPage } from "next";
@@ -6,10 +6,10 @@ import type { NextPage } from "next";
 const Threejs_Demo: NextPage = () => {
   return (
     <div className="h-screen w-screen">
-      <ARCanvas camera={{ position: [0, 3, 0] }}>
+      <ARCanvas camera={{ position: [0, 0, 2] }}>
         <ambientLight />
         <pointLight position={[5, 5, 5]} />
-        <ModelComponent />
+        <ThreeKnight />
         <OrbitControls />
       </ARCanvas>
     </div>
