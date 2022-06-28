@@ -7,7 +7,7 @@ const Threejs_Demo: NextPage = () => {
     <div className="h-screen w-screen">
       <ARCanvas>
         <ambientLight />
-        <pointLight position={[10, 10, 10]} />
+        <pointLight position={[5,5,5]} />
         <ModelComponent />
       </ARCanvas>
     </div>
