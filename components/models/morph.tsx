@@ -1,7 +1,6 @@
 import { useFrame, useLoader } from "@react-three/fiber";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import ARbutton from "three/examples/jsm/webxr/ARButton"
 
 function Morph() {
   const glb = useLoader(GLTFLoader, "/MorphStressTest.glb");
