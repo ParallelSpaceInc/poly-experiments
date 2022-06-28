@@ -25,7 +25,7 @@ declare global {
       alt?: string;
       ar?: boolean;
       "auto-rotate"?: boolean;
-      "camera-controls"?: boolean;
+      "camera-controls": boolean;
     }
   }
 }
