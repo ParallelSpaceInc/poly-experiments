@@ -13,5 +13,4 @@ const Threejs_Demo: NextPage = () => {
     </div>
   );
 };
-
 export default Threejs_Demo;
