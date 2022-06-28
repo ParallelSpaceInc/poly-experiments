@@ -12,6 +12,24 @@ export const ThreeKnight = () => {
   return <primitive ref={mesh} object={gltf.scene} position={[0, 0, 0]} />;
 };
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "model-viewer": ModelViewer;
+    }
+    interface ModelViewer {
+      src: string;
+      style?: object;
+      "ios-src"?: string;
+      poster?: string;
+      alt?: string;
+      ar?: boolean;
+      "auto-rotate"?: boolean;
+      "camera-controls"?: boolean;
+    }
+  }
+}
+
 export const GoogleKnight = () => {
   return (
     <model-viewer
