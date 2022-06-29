@@ -183,10 +183,10 @@
   "resolved" "https://registry.npmjs.org/@next/env/-/env-12.1.6.tgz"
   "version" "12.1.6"
 
-"@next/eslint-plugin-next@12.1.7-canary.35":
-  "integrity" "sha512-qn2m8gBzYKNTmIC6WxTsKY+CLxW7tC+QIv4OUB1Xd7/z68omCyCcMG0N2/JcIwaMi66U0aLqzBJycduOZlnN7g=="
-  "resolved" "https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-12.1.7-canary.35.tgz"
-  "version" "12.1.7-canary.35"
+"@next/eslint-plugin-next@12.2.0":
+  "integrity" "sha512-nIj5xV/z3dOfeBnE7qFAjUQZAi4pTlIMuusRM6s/T6lOz8x7mjY5s1ZkTUBmcjPVCb2VIv3CrMH0WZL6xfjZZg=="
+  "resolved" "https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-12.2.0.tgz"
+  "version" "12.2.0"
   dependencies:
     "glob" "7.1.7"
 
@@ -908,12 +908,12 @@
   "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz"
   "version" "4.0.0"
 
-"eslint-config-next@^12.1.7-canary.35":
-  "integrity" "sha512-j5QKtheZlGVFaXv9J0tt4vew4dJVXCzn2jsv5bvX1amMYG83gw76dGQ3gJgg6S2P5tZCCTneO5i7a+BD5szShA=="
-  "resolved" "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-12.1.7-canary.35.tgz"
-  "version" "12.1.7-canary.35"
+"eslint-config-next@12.2.0":
+  "integrity" "sha512-QWzNegadFXjQ0h3hixnLacRM9Kot85vQefyNsA8IeOnERZMz0Gvays1W6DMCjSxJbnCwuWaMXj9DCpar5IahRA=="
+  "resolved" "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-12.2.0.tgz"
+  "version" "12.2.0"
   dependencies:
-    "@next/eslint-plugin-next" "12.1.7-canary.35"
+    "@next/eslint-plugin-next" "12.2.0"
     "@rushstack/eslint-patch" "^1.1.3"
     "@typescript-eslint/parser" "^5.21.0"
     "eslint-import-resolver-node" "^0.3.6"
@@ -1680,7 +1680,7 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next@>=10.2.0", "next@12.1.6":
+"next@12.1.6":
   "integrity" "sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.1.6.tgz"
   "version" "12.1.6"
