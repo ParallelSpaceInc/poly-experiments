@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/compare/model-viewer",
+        destination: "https://test2.softmare.xyz",
+        permanent: false,
+      },
+    ];
+  },
+};

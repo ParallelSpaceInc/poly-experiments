@@ -20,20 +20,6 @@ function Home() {
           <p className="text-slate-800 text-3xl">Model-viewer (google)</p>
         </a>
       </Link>
-      {/* <ARCanvas style={{ width: "auto", height: "90vh" }}>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Box click={click} clicked={clicked} position={[-1.2, 0, 0]} />
-        <Box click={click} clicked={clicked} position={[1.2, 0, 0]} />
-      </ARCanvas>
-      <button
-        style={{ width: 100, height: 100 }}
-        onClick={() => {
-          click(!clicked);
-        }}
-      >
-        click
-      </button> */}
     </div>
   );
 }

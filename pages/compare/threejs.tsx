@@ -1,4 +1,4 @@
-import { ThreeKnight } from "@components/models/knight";
+import ThreeKnight from "@components/models/knight";
 import { OrbitControls } from "@react-three/drei";
 import { ARCanvas } from "@react-three/xr";
 import type { NextPage } from "next";
@@ -15,4 +15,5 @@ const Threejs_Demo: NextPage = () => {
     </div>
   );
 };
+
 export default Threejs_Demo;
