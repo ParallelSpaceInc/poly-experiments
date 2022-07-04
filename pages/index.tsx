@@ -11,7 +11,7 @@ function Home() {
             <p className="text-slate-800 text-3xl">Threejs</p>
           </a>
         </Link>
-        <Link href={"/compare/view3d"}>
+        <Link href={"/compare/view3D"}>
           <a>
             <p className="text-slate-800 text-3xl">View3D (naver)</p>
           </a>

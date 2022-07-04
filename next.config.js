@@ -9,6 +9,11 @@ module.exports = {
         destination: "https://test2.softmare.xyz",
         permanent: false,
       },
+      {
+        source: "/compare/view3D",
+        destination: "https://test2.softmare.xyz/view3D",
+        permanent: false,
+      },
     ];
   },
 };
