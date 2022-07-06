@@ -6,11 +6,11 @@ import type { NextPage } from "next";
 const Threejs_Demo: NextPage = () => {
   return (
     <div className="h-screen w-screen">
-      <ARCanvas camera={{ position: [0, 1, 2] }}>
+      <ARCanvas>
+        <OrbitControls />
+        <ThreeKnight />
         <ambientLight />
         <pointLight position={[5, 5, 5]} />
-        <ThreeKnight />
-        <OrbitControls />
         <axesHelper args={[5]} />
       </ARCanvas>
     </div>
