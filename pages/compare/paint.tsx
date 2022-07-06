@@ -1,24 +1,26 @@
 import { MutableRefObject, useEffect, useRef } from "react";
 import * as THREE from "three";
-import { PerspectiveCamera, Scene, WebGLRenderer } from "three";
+import {
+  PerspectiveCamera,
+  Scene,
+  WebGLRenderer,
+  XRTargetRaySpace,
+} from "three";
 import { ARButton } from "three/examples/jsm/webxr/ARButton";
-
-const scene = new THREE.Scene();
-
-const camera = new THREE.PerspectiveCamera(
-  70,
-  window.innerWidth / window.innerHeight,
-  0.01,
-  20
-);
-
-const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-const controller = renderer.xr.getController(0);
 
 function Page() {
   const ref = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
-    init(ref);
+    const scene = new THREE.Scene();
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    const controller = renderer.xr.getController(0);
+    const camera = new THREE.PerspectiveCamera(
+      70,
+      window.innerWidth / window.innerHeight,
+      0.01,
+      20
+    );
+    init(ref, camera, renderer, controller, scene);
     animate(camera, renderer, scene);
   }, [ref]);
   return <div ref={ref}></div>;
@@ -26,7 +28,13 @@ function Page() {
 
 export default Page;
 
-function init(ref: MutableRefObject<HTMLDivElement | null>) {
+function init(
+  ref: MutableRefObject<HTMLDivElement | null>,
+  camera: PerspectiveCamera,
+  renderer: WebGLRenderer,
+  controller: XRTargetRaySpace,
+  scene: Scene
+) {
   if (ref.current == null) return;
   if (window == null) return;
 
