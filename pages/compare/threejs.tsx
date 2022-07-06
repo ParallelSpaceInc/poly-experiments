@@ -11,6 +11,7 @@ const Threejs_Demo: NextPage = () => {
         <pointLight position={[5, 5, 5]} />
         <ThreeKnight />
         <OrbitControls />
+        <axesHelper args={[5]} />
       </ARCanvas>
     </div>
   );
