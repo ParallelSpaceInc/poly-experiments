@@ -12,7 +12,7 @@ declare global {
 interface ModelViewerJSX {
   src: string;
   poster?: string;
-  // ... others
+  [key: string]: any;
 }
 
 interface ModelViewerElement extends Element {
