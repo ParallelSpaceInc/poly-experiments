@@ -47,7 +47,8 @@ interface ModelViewerElement extends Element {
 const Model = () => (
   <div id="card" className="flex mx-auto h-screen">
     <model-viewer
-      src="/knight.glb/"
+      // src="/knight.glb/"
+      src="/knight_gltf/scene.gltf"
       // ios-src="/Grey_Knight.usdz"
       poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
       alt="A 3D model of an astronaut"
